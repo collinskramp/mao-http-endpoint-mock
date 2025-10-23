@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      [
+        'run', 'deploy', 'kramphub-product-items-update-sync-mockv2',
+        '--source=.',
+        '--region=europe-west1',
+        '--allow-unauthenticated',
+        '--project=kramp-appint-dev'
+      ]
+images: []

@@ -1,0 +1,21 @@
+{
+  "name": "mao-mock-api-tester",
+  "version": "1.0.0",
+  "description": "Load tester for realistic mock API service",
+  "main": "mao.mock.service.js",
+  "scripts": {
+    "test": "node test-api.js",
+    "test-local": "node test-local.js",
+    "start-local": "npx @google-cloud/functions-framework --target=helloHttp --source=. --port=8080",
+    "monitor": "node monitor.js"
+  },
+  "keywords": ["api", "testing", "mock", "load-test"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
