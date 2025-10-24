@@ -224,7 +224,7 @@ async function addDelay() {
   return 0;
 }  
 
-functions.http('helloHttp', async (req, res) => {
+functions.http('http', async (req, res) => {
   const requestStart = Date.now();
   const requestId = generateRequestId();
   serviceState.requestCount++;
