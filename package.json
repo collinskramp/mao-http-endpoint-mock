@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node test-api.js",
     "test-local": "node test-local.js",
-    "start-local": "npx @google-cloud/functions-framework --target=helloHttp --source=. --port=8080",
+    "start-local": "npx @google-cloud/functions-framework --target=http --source=. --port=8081",
     "monitor": "node monitor.js"
   },
   "keywords": ["api", "testing", "mock", "load-test"],
